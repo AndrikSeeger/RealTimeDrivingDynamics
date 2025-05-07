@@ -2,7 +2,7 @@
 
 ## ⚙️ Overview
 
-**RealTimeDrivingDynamics** is a high-efficiency, real-time ECU-style embedded system running on a Teensy 4.1 microcontroller. Designed for precise vehicle dynamics analysis, it uses **hardware interrupts** and **direct memory access (DMA)** to sample and log high-frequency sensor data with minimal latency.
+**RealTimeDrivingDynamics** is a high-efficiency, real-time ECU-style embedded system running on a Teensy 4.1 microcontroller. Designed for precise vehicle dynamics analysis, it uses **hardware interrupts** and **direct memory access** to sample and log high-frequency sensor data with minimal latency.
 
 ## ✨ Key Features
 
