@@ -10,7 +10,7 @@
 * 📥 **DMA-backed data access** for minimal CPU overhead
 * 🔌 **Custom CAN-Bus handling** for decoding raw binary Correvit messages
 * 🔧 **Clean, modular C++ architecture**
-* 📊 **Structured SD logging** with failure checks
+* 📊 **Structured SD card logging** with failure checks
 * 🧩 **Supports analog, I²C, and CAN-based sensors**
 
 ---
@@ -34,13 +34,13 @@
 ### 🧭 IMU – *MPU6050* via I²C
 
 * Measures 3-axis acceleration and gyroscopic rotation
-* Calibrated using 100 averaged samples on startup
+* Calibrated on startup
 * Accessed over I²C with precise bit parsing
 
 ### 🔄 Steering Potentiometer (Analog)
 
 * Measures voltage proportional to steering angle
-* Empirically mapped to wheel angles using calibrated functions
+* Wheel angles are computed using calibration functions derived from a full vehicle axle alignment
 
 ### 📡 Correvit Ground-Speed Sensor (CAN Bus)
 
@@ -52,7 +52,7 @@
 
 ## 💾 Data Logging
 
-Logs are written to SD in real time as tab-separated `.txt` files:
+Logs are written to SD card in real time as tab-separated `.txt` files:
 
 * `CAN_Trace.txt`: Groundspeed and yaw from Correvit
 * `MPU_Trace.txt`: Steering and IMU data
